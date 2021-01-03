@@ -1,25 +1,19 @@
 {
-    "name": "entidi/silverstripe-carousel",
+    "name": "galla-placidia/silverstripe-carousel",
     "description": "A new page type that provides a carousel with easily reorderable items and custom HTML captions",
     "type": "silverstripe-module",
-    "homepage": "http://silverstripe.entidi.com/",
     "keywords": ["silverstripe", "carousel", "bootstrap", "bxslider", "silverstrap"],
     "license": "BSD-2-Clause",
     "authors": [
         {
-            "name": "Nicola Fontana",
-            "email": "ntd@entidi.it",
-            "homepage": "http://www.entidi.com/",
-            "role": "Developer"
+            "name": "Marlis Heck",
+            "email": "info@gama-web.de",
+            "homepage": "https://www.gama-web.de/"            
         }
     ],
-    "support": {
-        "issues": "http://dev.entidi.com/p/silverstripe-carousel/issues/",
-        "source": "http://dev.entidi.com/p/silverstripe-carousel/source/tree/master/"
-    },
     "require": {
-        "silverstripe/cms": "~3.1",
-        "bummzack/sortablefile": "~1.2"
+        "silverstripe/cms": "^4.1",
+        "bummzack/sortablefile": "^2"
     },
     "extra": {
         "installer-name": "carousel",
