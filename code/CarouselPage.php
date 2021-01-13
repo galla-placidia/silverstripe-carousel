@@ -1,5 +1,24 @@
-<?php
 
+<?php
+use SilverStripe\ORM\DataExtension;
+
+use SilverStripe\Forms\TextareaField;
+use SilverStripe\Forms\TextField;
+
+use SilverStripe\Forms\RequiredFields;
+use SilverStripe\Forms\NumericField;
+use SilverStripe\Forms\CheckboxField;
+
+use SilverStripe\Forms\FieldGroup;
+use SilverStripe\Forms\CheckboxSetField;
+use SilverStripe\Forms\HTMLEditor\HTMLEditorField;
+
+use SilverStripe\Assets\Image;
+use SilverStripe\Assets\Image_Backend;
+use SilverStripe\Assets\File;
+use SilverStripe\AssetAdmin\Forms\UploadField;
+
+use Page;
 /**
  * Provide additional methods specially crafted for carousels.
  *
