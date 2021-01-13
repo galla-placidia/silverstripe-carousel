@@ -19,6 +19,7 @@ use SilverStripe\Assets\File;
 use SilverStripe\AssetAdmin\Forms\UploadField;
 
 use Bummzack\SortableFile\Forms\SortableUploadField;
+use CarouselCaptionField;
 use CarouselImageExtension;
 use Page;
 /**
