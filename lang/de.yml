@@ -1,0 +1,10 @@
+ de:
+    CarouselPage:
+        SINGULARNAME: 'Carousel Seite'
+        PLURALNAME: 'Carousel Seiten'
+        DESCRIPTION: 'Bilder in einer Reihenfolge zeigen'
+        Caption: 'Bildunterschrift'
+        db_Images: 'Bilderliste'
+        db_Captions: 'Bildunterschriften innerhalb des Bildes zeigen'
+        db_Width: 'Bildbreite'
+        db_Height: 'Bildhöhe'
