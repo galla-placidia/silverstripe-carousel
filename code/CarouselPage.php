@@ -179,20 +179,3 @@ class CarouselPage extends Page
         }
     }
 }
-
-/**
- * Controller for CarouselPage.
- *
- * @package silverstripe-carousel
- */
-class CarouselPage_Controller extends Page_Controller
-{
-    /**
-     * From the controller the images are returned in proper order.
-     * This means `<% loop $Images %>` returns the expected result.
-     */
-    public function Images()
-    {
-        return $this->dataRecord->Images()->Sort('SortOrder');
-    }
-}
