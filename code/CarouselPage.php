@@ -18,6 +18,8 @@ use SilverStripe\Assets\Image_Backend;
 use SilverStripe\Assets\File;
 use SilverStripe\AssetAdmin\Forms\UploadField;
 
+use Bummzack\SortableFile\Forms\SortableUploadField;
+
 use Page;
 /**
  * Provide additional methods specially crafted for carousels.
@@ -152,30 +154,5 @@ class CarouselPage extends Page
             'ThumbnailWidth',
             'ThumbnailHeight'
         );
-    }
-
-    /**
-     * Out of the box support for silverstripe/silverstripe-translatable.
-     *
-     * Duplicate the image list whenever a new translation is created.
-     * It the translatable module is not used, this will simply be a
-     * dead method.
-     *
-     * @param boolean $save Whether the new page should be saved to the
-     *                      database.
-     */
-    public function onTranslatableCreate($save)
-    {
-        // Chain up the parent method, if it exists
-        if (method_exists('Page', 'onTranslatableCreate')) {
-            parent::onTranslatableCreate($save);
-        }
-
-        $master = $this->getTranslation(Translatable::default_locale());
-
-        foreach ($master->Images() as $master_image) {
-            $image = $master_image->duplicate($save);
-            $this->Images()->add($image);
-        }
     }
 }
